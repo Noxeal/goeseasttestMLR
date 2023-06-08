@@ -1,0 +1,38 @@
+DEF_prd_id="Emultic2kmNC4"
+DEF_prd_legend="GOES-R - multi-canaux de resolution 2km-format netcdf"
+DEF_prd_app="ncABImultican"
+DEF_prd_sources="Evis004R2kmNC+Evis006R2kmNC+Evis008R2kmNC+Evis014R2kmNC+Evis016R2kmNC+Evis022R2kmNC+Eir039R2kmNC+Eir062R2kmNC+Eir069R2kmNC+Eir073R2kmNC+Eir085R2kmNC+Eir096R2kmNC+Eir103R2kmNC+Eir112R2kmNC+Eir123R2kmNC+Eir133R2kmNC"
+DEF_prd_interface="prd_ncABImultican -P Emultic2kmNC4"
+#
+DEF_prd_trs="safnwcg,SATMOSonline,interne,tmpTRS,geosafo"
+#
+DEF_prd_sch_interne="always"
+DEF_prd_rmk_interne="y"
+#
+DEF_prd_sch_tmpTRS="sch_goes_Netcdf -M 00,30"
+#DEF_prd_sch_tmpTRS="always"
+DEF_prd_cmp_tmpTRS="null"
+DEF_prd_stx_tmpTRS="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMNSS}_${NNNNN}.nc"
+#
+DEF_prd_sch_controlesCMS="always"
+DEF_prd_cmp_controlesCMS="null"
+DEF_prd_stx_controlesCMS="${PRD}_${SATIMG}_${YYYYMMDD}${HHMN}_${HOSTNAME}.nc"
+#
+DEF_prd_sch_archivesCMS="always"
+DEF_prd_cmp_archivesCMS="null"
+DEF_prd_stx_archivesCMS="/goeseast/${SATIMG}/all/${YYYY}/${MM}/${DD}/${PRD}_${SATIMG}_${YYYYMMDD}${HHMN}.nc"
+#
+DEF_prd_sch_safnwcg="sch_goes_Netcdf -M 00,10,20,30,40,50"
+DEF_prd_cmp_safnwcg="null"
+DEF_prd_stx_safnwcg="${PRD}_${SATIMG}_${YYYYMMDD}${HHMN}.nc"
+#
+DEF_prd_sch_geosafo="sch_goes_Netcdf -M 00,10,20,30,40,50"
+DEF_prd_cmp_geosafo="null"
+DEF_prd_stx_geosafo="${PRD}_${SATIMG}_${YYYYMMDD}${HHMN}.nc"
+#
+DEF_prd_sch_xsat="always"
+#
+DEF_prd_sch_SATMOSonline="sch_goes_Netcdf -M 00,10,20,30,40,50"
+DEF_prd_cmp_SATMOSonline="null"
+DEF_prd_stx_SATMOSonline="${PRD}_${SATIMG}_${YYYYMMDD}${HHMN}.nc"
+#

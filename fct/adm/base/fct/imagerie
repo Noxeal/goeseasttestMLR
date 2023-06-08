@@ -1,0 +1,21 @@
+#----------------------
+# Attributs specifiques
+#----------------------
+DEF_fct_id="imagerie"
+DEF_fct_legend="imagerie"
+DEF_fct_start="null"
+DEF_fct_stop="null"
+#----------------------
+# Attributs de spool
+#----------------------
+DEF_fct_processor=-1
+DEF_fct_check=n
+DEF_fct_priority=task
+DEF_fct_tmode=enable
+DEF_fct_torder=fifo
+DEF_fct_tarcv=0
+DEF_fct_tartd=30
+DEF_fct_tnfiq=5
+DEF_fct_dmode=reject
+DEF_fct_ntmp=10
+DEF_fct_atmp=30

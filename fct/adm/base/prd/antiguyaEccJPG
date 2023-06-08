@@ -1,0 +1,21 @@
+DEF_prd_id="antiguyaEccJPG"
+DEF_prd_legend="GOES-E Antilles Guyane CC mediatique TF1"
+DEF_prd_app="imgTV"
+#
+DEF_prd_trs="interne,TRANSMETprior,dataspaceCMS"
+#
+DEF_prd_rmk_interne="y"
+DEF_prd_sch_interne="always"
+#
+DEF_prd_sch_TRANSMETprior="sch_goes_Netcdf -M 00,10,20,30,40,50"
+DEF_prd_cmp_TRANSMETprior="null"
+DEF_prd_xstx_TRANSMETprior="xstx_ett_msg -e tif.LT" # ajout gestion par xstx EOCA5n
+#
+DEF_prd_sch_controlesCMS="always"
+DEF_prd_cmp_controlesCMS="null"
+DEF_prd_stx_controlesCMS="${PRD}.goeseast.${YYYYMMDD}.${HHMN}.${NN}_${HOSTNAME}.jpg"
+#
+DEF_prd_rmk_dataspaceCMS="n"
+DEF_prd_sch_dataspaceCMS="always"
+DEF_prd_cmp_dataspaceCMS="null"
+DEF_prd_stx_dataspaceCMS="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}_${NN}.jpg"

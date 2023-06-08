@@ -1,0 +1,30 @@
+DEF_prd_id="globeEvis006GT"
+DEF_prd_legend="GOES-E globe. Visible avec correction d'angle solaire. Sans parallaxe. 500m, 1km ou 2km. Geotiff."
+DEF_prd_app="imgPREVI"
+#
+DEF_prd_trs="TRANSMETprior,interne,dataspaceCMS,testSYNOPSISdev"
+#
+DEF_prd_sch_TRANSMETprior="sch_goes_Netcdf -M 00,10,20,30,40,50"
+DEF_prd_cmp_TRANSMETprior="null"
+DEF_prd_xstx_TRANSMETprior="xstx_ett_msg -e tif.LT" # ajout gestion par xstx EVXAnn
+#
+DEF_prd_sch_controlesCMS="always"
+DEF_prd_cmp_controlesCMS="null"
+DEF_prd_stx_controlesCMS="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}_${NN}_${HOSTNAME}.tif"
+#
+DEF_prd_rmk_testSYNERGIE="n"
+DEF_prd_sch_testSYNERGIE="always"
+DEF_prd_cmp_testSYNERGIE="null"
+DEF_prd_stx_testSYNERGIE="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}.gtif.LT"
+#
+DEF_prd_rmk_testSYNOPSISdev="n"
+DEF_prd_sch_testSYNOPSISdev="always"
+DEF_prd_cmp_testSYNOPSISdev="null"
+DEF_prd_stx_testSYNOPSISdev="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}.gtif.LT"
+#
+DEF_prd_sch_interne="always"
+#
+DEF_prd_sch_dataspaceCMS="always"
+DEF_prd_cmp_dataspaceCMS="null"
+DEF_prd_stx_dataspaceCMS="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}_${NN}.tif"
+#

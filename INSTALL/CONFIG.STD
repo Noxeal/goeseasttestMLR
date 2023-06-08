@@ -1,0 +1,117 @@
+#===============================================================================
+# Configuration de la chaine ArchiPEL goeseast.
+#===============================================================================
+#-------------------------------------------------------------------------------
+# Niveau ArchiPEL :
+# permet aux scripts de s'adapter au systeme ArchiPEL sous lequel ils tournent
+#-------------------------------------------------------------------------------
+#
+CONFIG_ARCHIPEL_LEVEL=3
+CONFIG_ARCHIPEL_HHMNSS=ON
+# Il faut mettre la date sur 6 caracteres pour l'envoi de pseudoEPI.
+#
+#
+#-------------------------------------------------------------------------------
+# Liste des filesystems de la chaine
+#-------------------------------------------------------------------------------
+#
+# Cette liste definit des "SPACES" dans l'ordre ou ils sont declares.
+# Ces "espaces" sont references "SPACEi"
+#
+CONFIG_ARCHIPEL_fs=""
+#
+#-------------------------------------------------------------------------------
+# Definition des SPACEs primaires
+#-------------------------------------------------------------------------------
+#
+CONFIG_ARCHIPEL_INSTALL_space=1
+
+CONFIG_ARCHIPEL_HUB_space=1
+
+CONFIG_ARCHIPEL_fct_space=1
+CONFIG_ARCHIPEL_rcp_space=1
+CONFIG_ARCHIPEL_trs_space=1
+CONFIG_ARCHIPEL_app_space=1
+
+CONFIG_ARCHIPEL_TMP_space=1
+#
+#-------------------------------------------------------------------------------
+# fonctions
+#-------------------------------------------------------------------------------
+#
+CONFIG_ARCHIPEL_fct_list="adm atmospheres composition dynamiques edition imagerie localisation log masques media parallaxmatrices rpt satellites extendedADM pimoch"
+#
+# SPACEs (par defaut : le SPACE principal du service fonction)
+#
+#-------------------------------------------------------------------------------
+# applications
+#-------------------------------------------------------------------------------
+#
+CONFIG_ARCHIPEL_app_list="imgPREVI imgPREVIcc imgDATATION imgTIFFMF quicklooks imgTV imgW3 imgMEDIA imgINTERNE ncABIcorr ncABImultican imgSST ingestSegGoesr Xrit2Netcdf imgMFI VraieCouleur modeles eclairs eclairs4safnwc precip2 precip3 eclairsConcat imgIWC animations imgRrqpeAerosols"
+#
+# SPACEs (par defaut : le SPACE principal du service application)
+#
+# SPACEs des spools, WRK_SRC et WRK_PRD (par defaut : le SPACE HUB)
+#
+#-------------------------------------------------------------------------------
+# receptions (expediteurs)
+#-------------------------------------------------------------------------------
+#
+CONFIG_ARCHIPEL_rcp_list="interne abiNC geosafo XRITsegments safnwc GRB"
+#
+#-------------------------------------------------------------------------------
+# transmissions (destinataires)
+#-------------------------------------------------------------------------------
+#
+CONFIG_ARCHIPEL_trs_list="SATMOS TRANSMETFAC W3online controlesCMS fileserverCMS xsat SATMOSonline TRANSMETprior archivesCMS dataspaceCMS interne safnwcg safnwcgGLM geosafo tmpTRS testSYNERGIE synergieCMS SOPRANOsec testSYNOPSIS testSYNOPSIScms rrsat"
+#
+#-------------------------------------------------------------------------------
+# chemins d'acces
+#-------------------------------------------------------------------------------
+#
+# l'espace soft est suppose resider sur /soft
+SOFT=/soft
+#
+# pour A_cronx
+#
+CONFIG_ARCHIPEL_SOFT=${SOFT}/cms/ArchiPEL
+#
+#-------------------------------------------------------------------------------
+# PATH
+#-------------------------------------------------------------------------------
+#
+CONFIG_ARCHIPEL_PATH=${SOFT}/python/bin/:${HOME}/archipel3/dev/bin:${HOME}/archipel3/dev/bin/to_geojson:${HOME}/archipel3/dev/bin/eclairs:/usr/local/slurm/bin:${SOFT}/pbmplus/bin:/soft/gdal/bin:${SOFT}/cms/ArchiPEL/bin:${SOFT}/cms/ArchiPEL/libsh:/soft/jdk/jre/bin:${SOFT}/cms/cms/bin:/soft/netcdf/bin:${SOFT}/imagemagick/bin:${SOFT}/cms/cms/include:${SOFT}/cms/cms/libsh:${SOFT}/cms/cms/lib:${SOFT}/cms/dirpf/bin:${SOFT}/cms/dirpf/libsh:${SOFT}/cms/ArchiPEL_goes/bin:${SOFT}/cms/ArchiPEL_goes/bin/eclairs:${SOFT}/cms/ArchiPEL_goes/libsh:${SOFT}/cms/prod/bin:/${SOFT}/cms/ArchiPEL_MSG/bin:${SOFT}/cms/ArchiPEL_mtsatxrit/bin:${SOFT}/libgeotiff/bin:${SOFT}/cms/pbmplus/bin:/usr/kerberos/bin:/bin:/usr/sbin:/usr/local/bin:/usr/bin:/usr/jre/bin
+#
+#-------------------------------------------------------------------------------
+# MANPATH
+#-------------------------------------------------------------------------------
+#
+CONFIG_ARCHIPEL_MANPATH=${SOFT}/aapp/AAPP/man:${SOFT}/cms/prod/man:${SOFT}/cms/mdd/man:${SOFT}/cms/qualsst/man:${SOFT}/cms/ArchiPEL_iasi/man:${SOFT}/cms/ArchiPEL_metop/man:${SOFT}/cms/ArchiPEL_goes/man:${SOFT}/cms/osat/man:${SOFT}/cms/ArchiPEL_npp/man:${SOFT}/cms/ArchiPEL_MSG/man:${SOFT}/cms/ArchiPEL/man:${SOFT}/cms/pbmplus/man:${SOFT}/cms/medspi/man:${SOFT}/cms/ocea/man:${SOFT}/cms/otr/man:${SOFT}/cms/safoa/man:${SOFT}/cms/ArchiPEL_fy/man:${SOFT}/cms/ArchiPEL_noaa/man:${SOFT}/cms/log/man:${SOFT}/cms/ArchiPEL_xsat/man:${SOFT}/cms/puma2015/man:${SOFT}/cms/ArchiPEL_dmsp/man:${SOFT}/cms/cms/man:${SOFT}/cms/safox/man:${SOFT}/cms/ArchiPEL_mtsatxrit/man:${SOFT}/imagemagick/share/man:${SOFT}/jdk/man:${SOFT}/libgeotiff/share/man:${SOFT}/netcdf/share/man:${SOFT}/proj/share/man:${SOFT}/python/share/man:${SOFT}/sqlite/share/man:${SOFT}/tiff/share/man:${SOFT}/zlib/share/man:/usr/man:/usr/local/slurm/man
+#
+#-------------------------------------------------------------------------------
+# LD_LIBRARY_PATH
+#-------------------------------------------------------------------------------
+#
+CONFIG_ARCHIPEL_LD_LIBRARY_PATH=${SOFT}/python/lib:${SOFT}/proj/lib:${SOFT}/gdal/lib:${SOFT}/hdf5/lib:${SOFT}/netcdf/lib64:${SOFT}/geos/lib64:${SOFT}/zlib/lib:${SOFT}/gdal/lib/java:${SOFT}/eccodes/lib:${SOFT}/tiff/lib:${SOFT}/tiffmf/lib:${SOFT}/libgeotiff/lib:${SOFT}/cms/ArchiPEL/lib:${SOFT}/cms/ArchiPEL_MSG/lib:${SOFT}/cms/cms/lib:${SOFT}/cms/pbmplus/lib:/usr/lib:/usr/local/lib:/usr/local/lib64
+#
+#-------------------------------------------------------------------------------
+# PERL5LIB
+#-------------------------------------------------------------------------------
+#
+CONFIG_PERL5LIB=${SOFT}/cms/ArchiPEL/libperl
+#
+#-------------------------------------------------------------------------------
+# CLASSPATH
+#-------------------------------------------------------------------------------
+#
+CONFIG_CLASSPATH=${HOME}/dev/java:${SOFT}/netcdf-java/netcdfAll-4.3.jar:${SOFT}/cms/cms/java:${SOFT}/cms/cms/java/*:${SOFT}/gdal/java/*:${SOFT}/cms/ArchiPEL_goes/java:${SOFT}/cms/ArchiPEL_goes/java/*:${SOFT}/cms/ArchiPEL_MSG/java/*:${SOFT}/nujan/*:${SOFT}/cms/ArchiPEL_MSG/java:${SOFT}/cms/ArchiPEL/java:${SOFT}/geotools/*
+#
+#-------------------------------------------------------------------------------
+# PYTHONPATH
+#-------------------------------------------------------------------------------
+#
+CONFIG_PYTHONPATH=${HOME}/dev/bin:${SOFT}/python/lib/python3.8/site-packages:${SOFT}/cms/ArchiPEL_goes/bin:${SOFT}/cms/ArchiPEL_goes/bin/eclairs:${SOFT}/cms/cms/bin
+#
+#==============================================================================
+# (C) METEO-FRANCE
+#==============================================================================

@@ -1,0 +1,32 @@
+#----------------------
+# Attributs specifiques
+#----------------------
+DEF_trs_id="tmpTRS"
+#DEF_trs_legend="transmission a usage temporaire"
+DEF_trs_interface="A_trs_ftp -h fremINT -d /monftp/public/send/G_goeswest/A_goeseast/data -u ftp -p goeseast -t 600 -m 2 -w 15"
+#DEF_trs_interface_INT="A_trs_ftp -h heiz220x -d /archipel3/goeswest/rcp/goeseast/SPOOL -u archipel3 -p nrj\$\$ -t 600 -m 2 -w 15"
+#DEF_trs_interface="A_trs_ftp -h `hostname -s` -d /archipel3/goesr/TMP/trs/tmpTRS/ -u archipel3 -p nrj\$\$ -t 600 -m 2 -w 15"
+#DEF_trs_interface="A_trs_ftp -h host -d dir -u user -p passwd [-t timeout] [-m maxrepeat] [-w wait]"
+#			ou bien
+#DEF_trs_interface="A_ftp_put -h host -u user -p passwd [-t timeout] [-m maxrepeat] [-w wait] [-T ON|OFF]"
+# sachant que A_ftp_put cree eventuellement les repertoires intermediaires du
+# chemin de "remote", a partir du repertoire de connexion de "user" dans le
+# cas d'un chemin relatif ou a partir de "/" dans le cas d'un chemin absolu.
+# Le repertoire vers lequel doit etre effectue le transfert peut donc etre
+# partiellement defini via l'attribut "DEF_prd_stx_tmpTRS" du produit.
+#----------------------
+# Attributs de spool
+#----------------------
+DEF_trs_processor=-1
+DEF_trs_check=y
+DEF_trs_priority=data
+DEF_trs_tmode=reject
+DEF_trs_dmode=reject
+DEF_trs_dmode_INT=enable
+DEF_trs_dmode_TLS=reject
+DEF_trs_dorder=fifo
+DEF_trs_darcv=0
+DEF_trs_dartd=30
+DEF_trs_dnfiq=20
+DEF_trs_ntmp=10
+DEF_trs_atmp=30

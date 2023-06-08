@@ -1,0 +1,16 @@
+DEF_prd_id="diragEic"
+DEF_prd_legend="GOES-E DIRAG IR colore (methode Gerard Therry 1989) - format JPEG"
+DEF_prd_app="imgPREVI"
+#
+DEF_prd_trs="TRANSMETprior"
+#
+DEF_prd_rmk_TRANSMETprior="n"
+DEF_prd_sch_TRANSMETprior="sch_goes_Netcdf -M 00,30"
+DEF_prd_cmp_TRANSMETprior="null"
+DEF_prd_stx_TRANSMETprior="EICA47GOEE${DD}${HHMN}.${PRD}.goeseast.${YYYYMMDD}.${HHMN}.${NN}.tif.LT"
+#
+DEF_prd_rmk_controlesCMS="y"
+DEF_prd_sch_controlesCMS="always"
+DEF_prd_cmp_controlesCMS="null"
+DEF_prd_stx_controlesCMS="${PRD}_${YYYYMMDD}_${HHMN}_${NNNNN}_${HOSTNAME}.jpg"
+#

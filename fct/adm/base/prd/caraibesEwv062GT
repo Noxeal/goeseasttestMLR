@@ -1,0 +1,23 @@
+DEF_prd_id="caraibesEwv062GT"
+DEF_prd_legend="GOES-E domaine restreint caraibes wv062. Dynamique de 180 a 307.5. Geotiff."
+DEF_prd_app="imgMFI"
+DEF_prd_sources="globeEwv062GT"
+DEF_prd_interface="prd_goesE_mfi -P caraibesEwv062GT"
+#
+DEF_prd_trs="dataspaceCMS,TRANSMETFAC"
+#
+DEF_prd_rmk_TRANSMETFAC="y"
+DEF_prd_sch_TRANSMETFAC="sch_goes_Netcdf -M 00"
+DEF_prd_cmp_TRANSMETFAC="null"
+DEF_prd_stx_TRANSMETFAC="EWCA60GOEE${DD}${HHMN}.${PRD}.goeseast.${YYYYMMDD}.${HHMN}.${NN}.gtif.LT"
+#
+DEF_prd_rmk_dataspaceCMS="n"
+DEF_prd_sch_dataspaceCMS="always"
+DEF_prd_cmp_dataspaceCMS="null"
+DEF_prd_stx_dataspaceCMS="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}_${NN}.tif"
+#
+DEF_prd_sch_controlesCMS="always"
+DEF_prd_cmp_controlesCMS="null"
+DEF_prd_stx_controlesCMS="EWCA60GOEE${DD}${HHMN}.${PRD}.goeseast.${YYYYMMDD}.${HHMN}.${NN}.tif.LT"
+#DEF_prd_stx_controlesCMS="${PRD}.goeseast.${YYYYMMDD}.${HHMN}.${NN}_${HOSTNAME}.tif"
+#

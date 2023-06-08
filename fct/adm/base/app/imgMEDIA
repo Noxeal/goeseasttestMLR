@@ -1,0 +1,30 @@
+#----------------------
+# Attributs specifiques 
+#----------------------
+DEF_app_id="imgMEDIA"
+DEF_app_legend="Imagerie pour les media : globeEccmediaGT, AntillesGuyaneEccmedia"
+DEF_app_start="null"
+DEF_app_stop="null"
+DEF_app_fbr=n
+DEF_app_sources="globeEccnuitGT,Evis004R1kmNC,Evis004R2kmNC,Evis006R500mNC,Evis006R1kmNC,Evis006R2kmNC,Evis008R2kmNC,Evis008R1kmNC,Evis016R1kmNC,Evis016R2kmNC,Evis022R2kmNC,Eir039R2kmNC,Eir073R2kmNC,Eir085R2kmNC,Eir112R2kmNC,Eir123R2kmNC,zensolbr"
+DEF_app_interface="app_goesr_CCMediatiqueJourNuit"
+DEF_app_optstd=y
+#----------------------
+# Attributs de spool
+#----------------------
+DEF_app_processor=-1
+DEF_app_check=n
+DEF_app_priority=task
+DEF_app_tmode=enable
+DEF_app_torder=fifo
+DEF_app_tarcv=0
+DEF_app_tartd=30
+DEF_app_dmode=enable
+DEF_app_dorder=fifo
+DEF_app_darcv=0
+DEF_app_dartd=30
+DEF_app_dnfiq=20
+DEF_app_ntmp=10
+DEF_app_atmp=30
+DEF_app_timeout=3600
+DEF_app_nbcpumin=4

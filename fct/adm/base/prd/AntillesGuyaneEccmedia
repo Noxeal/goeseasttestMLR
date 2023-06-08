@@ -1,0 +1,17 @@
+DEF_prd_id="AntillesGuyaneEccmedia"
+DEF_prd_legend="Composition coloree mediatique au format JPEG sur l'Antilles-Guyane. Depuis le 30/7/2014, l'algo de nuit a ete rajoute."
+#
+DEF_prd_app="imgTV"
+#
+DEF_prd_trs="TRANSMETprior"
+#
+DEF_prd_rmk_TRANSMETprior="n"
+# DEF_prd_sch_TRANSMETprior="sch_goes_Netcdf -H 0000,0300,0600,0900,1200,1500,1800,2100"
+DEF_prd_sch_TRANSMETprior="sch_goes_Netcdf -M 00,30"
+DEF_prd_cmp_TRANSMETprior="null"
+DEF_prd_stx_TRANSMETprior="EOCA52GOEE${DD}${HHMN}.${PRD}.goeseast.${YYYYMMDD}.${HHMN}.${NN}.jpg.LT"
+#
+DEF_prd_sch_controlesCMS="always"
+DEF_prd_cmp_controlesCMS="null"
+DEF_prd_stx_controlesCMS="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}_${NNNNN}_${HOSTNAME}.jpg"
+#

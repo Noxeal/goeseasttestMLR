@@ -1,0 +1,35 @@
+DEF_prd_id="Emultic1kmNC4"
+DEF_prd_legend="GOES-R - multi-canaux de resolution 1km-format netcdf"
+DEF_prd_app="ncABImultican"
+# rcp nominale (grb) : Evis004R1kmNC+Evis008R1kmNC+Evis016R1kmNC
+# rcp secours (ftp midax) : Evis006R1kmNC (arret des la rcp du grb, eumetcast devenant secours)
+# M apres rcp du canal02 a 1 km fin dec 2017 par ftp
+#DEF_prd_sources="Evis004R1kmNC+Evis008R1kmNC+Evis016R1kmNC,Evis006R1kmNC"
+DEF_prd_sources="Evis004R1kmNC+Evis008R1kmNC+Evis016R1kmNC"
+DEF_prd_interface="prd_ncABImultican -P Emultic1kmNC4"
+#
+DEF_prd_trs="safnwcg,SATMOSonline"
+#
+DEF_prd_sch_interne="always"
+DEF_prd_rmk_interne="y"
+#
+DEF_prd_sch_tmpTRS="always"
+DEF_prd_cmp_tmpTRS="null"
+DEF_prd_stx_tmpTRS="${PRD}_${SATIMG}_${YYYYMMDD}${HHMNSS}.nc"
+#
+DEF_prd_sch_controlesCMS="always"
+DEF_prd_cmp_controlesCMS="null"
+DEF_prd_stx_controlesCMS="${PRD}_${SATIMG}_${YYYYMMDD}${HHMN}_${HOSTNAME}.nc"
+#
+DEF_prd_sch_archivesCMS="always"
+DEF_prd_cmp_archivesCMS="null"
+DEF_prd_stx_archivesCMS="/goeseast/${SATIMG}/all/${YYYY}/${MM}/${DD}/${PRD}_${SATIMG}_${YYYYMMDD}${HHMN}.nc"
+#
+DEF_prd_sch_safnwcg="sch_goes_Netcdf -M 00,10,20,30,40,50"
+DEF_prd_cmp_safnwcg="null"
+DEF_prd_stx_safnwcg="${PRD}_${SATIMG}_${YYYYMMDD}${HHMN}.nc"
+#
+DEF_prd_sch_SATMOSonline="sch_goes_Netcdf -M 00,10,20,30,40,50"
+DEF_prd_cmp_SATMOSonline="null"
+DEF_prd_stx_SATMOSonline="${PRD}_${SATIMG}_${YYYYMMDD}${HHMN}.nc"
+#

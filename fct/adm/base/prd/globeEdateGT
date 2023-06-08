@@ -1,0 +1,25 @@
+DEF_prd_id="globeEdateGT"
+DEF_prd_legend="GOES-E globe. Datation. Geotiff."
+DEF_prd_app="imgPREVI"
+#
+DEF_prd_trs="interne,TRANSMETprior,testSYNOSPISdev"
+#
+DEF_prd_sch_TRANSMETprior="sch_goes_Netcdf -M 00,10,20,30,40,50"
+DEF_prd_cmp_TRANSMETprior="null"
+DEF_prd_xstx_TRANSMETprior="xstx_ett_msg -e tif.LT" # ajout gestion par xstx
+#
+DEF_prd_sch_controlesCMS="always"
+DEF_prd_cmp_controlesCMS="null"
+DEF_prd_stx_controlesCMS="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}_${NN}_${HOSTNAME}.gtif"
+#
+DEF_prd_rmk_testSYNOPSISdev="n"
+DEF_prd_sch_testSYNOPSISdev="always"
+DEF_prd_cmp_testSYNOPSISdev="null"
+DEF_prd_stx_testSYNOPSISdev="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}.gtif.LT"
+#
+DEF_prd_sch_tmpTRS="alwayst"
+DEF_prd_cmp_tmpTRS="null"
+DEF_prd_xstx_tmpTRS="xstx_ett_msg -e gtif.LT" # ajout gestion par xstx
+#
+DEF_prd_sch_interne="always"
+#

@@ -1,0 +1,20 @@
+DEF_prd_id="Evis014R2kmNC"
+DEF_prd_legend="GOES-R - 1.4 microns(canal 04)-resolution 2km-format netcdf"
+DEF_prd_app="ncABIcorr"
+DEF_prd_sources="ABIL1bRadFC04"
+DEF_prd_interface="prd_ncABIcorr -P Evis014R2kmNC"
+#
+DEF_prd_trs="interne"
+#DEF_prd_trs="interne,tmpTRS"
+#
+DEF_prd_sch_interne="always"
+DEF_prd_rmk_interne="n"
+#
+DEF_prd_sch_tmpTRS="always"
+DEF_prd_cmp_tmpTRS="null"
+DEF_prd_stx_tmpTRS="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMNSS}_${NNNNN}.nc"
+#
+DEF_prd_sch_archivesCMS="always"
+DEF_prd_cmp_archivesCMS="null"
+DEF_prd_stx_archivesCMS="/pub/archipel/${ARCHIPEL_ID}/${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}_${NN}.nc"
+#

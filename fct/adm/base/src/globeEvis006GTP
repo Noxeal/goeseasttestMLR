@@ -1,0 +1,4 @@
+DEF_src_id="globeEvis006GTP"
+DEF_src_legend="GOES-E visible 2km pour imgTIFFMF."
+DEF_src_info="A_stdname_idf_linux"
+DEF_src_filter="null"

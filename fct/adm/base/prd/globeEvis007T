@@ -1,0 +1,26 @@
+DEF_prd_id="globeEvis006T"
+DEF_prd_legend="GOES-E globe VIS a 1km ou 500 m de resolution - TIFF-MF. Avec correction d'angle solaire. Sans parallaxe."
+DEF_prd_app="imgTIFFMF"
+#
+DEF_prd_trs="TRANSMETprior"
+#
+DEF_prd_rmk_SOPRANOsec="n"
+DEF_prd_sch_SOPRANOsec="sch_goes_Netcdf -M 00,10,20,30,40,50"
+DEF_prd_cmp_SOPRANOsec="null"
+DEF_prd_xstx_SOPRANOsec="xstx_ett_msg -e tif.LT" # ajout gestion par xstx EVXA4n
+#
+DEF_prd_sch_TRANSMETprior="sch_goes_Netcdf -M 00,10,20,30,40,50"
+DEF_prd_cmp_TRANSMETprior="null"
+DEF_prd_xstx_TRANSMETprior="xstx_ett_msg -e tif.LT" # ajout gestion par xstx EVXA4n
+#
+DEF_prd_sch_controlesCMS="always"
+DEF_prd_cmp_controlesCMS="null"
+DEF_prd_stx_controlesCMS="${PRD}.goeseast.${YYYYMMDD}.${HHMN}.${NN}_${HOSTNAME}.tif"
+#
+DEF_prd_rmk_testSYNERGIE="n"
+DEF_prd_sch_testSYNERGIE="always"
+DEF_prd_cmp_testSYNERGIE="null"
+DEF_prd_stx_testSYNERGIE="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}.tif.LT"
+#
+
+

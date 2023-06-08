@@ -1,0 +1,15 @@
+DEF_prd_id="globeEccw3JPG"
+DEF_prd_legend="GOES-E globe CC W3online"
+DEF_prd_app="imgW3"
+#
+DEF_prd_trs="W3online"
+#
+DEF_prd_sch_W3online="always"
+DEF_prd_cmp_W3online="null"
+DEF_prd_stx_W3online="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}.jpg"
+#
+DEF_prd_sch_controlesCMS="always"
+DEF_prd_cmp_controlesCMS="null"
+DEF_prd_stx_controlesCMS="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}_${HOSTNAME}.jpg"
+#
+

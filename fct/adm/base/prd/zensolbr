@@ -1,0 +1,18 @@
+DEF_prd_id="zensolbr"
+DEF_prd_legend="Angle zenital solaire pour la resolution basse de 2712 x 2712 x 4 km."
+DEF_prd_app="imgINTERNE"
+DEF_prd_sources="Eir103R2kmNC+datationgtiff"
+# datationgtiff n'est qu'un declencheur de traitement. Son contenu n'est pas utilise.
+DEF_prd_interface="prd_goesr_zensol"
+#
+DEF_prd_trs="interne"
+#
+DEF_prd_rmk_interne="y"
+DEF_prd_sch_interne="sch_MSG -M 00,10,20,30,40,50"
+#DEF_prd_sch_interne="always"
+#
+DEF_prd_rmk_controlesCMS="n"
+DEF_prd_sch_controlesCMS="always"
+DEF_prd_cmp_controlesCMS="null"
+DEF_prd_stx_controlesCMS="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}_${NNNNN}_${HOSTNAME}.tif"
+#

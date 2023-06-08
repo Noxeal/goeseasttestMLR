@@ -1,0 +1,17 @@
+DEF_prd_id="globeEoffsetP"
+DEF_prd_legend="globe - decalage parallaxe"
+DEF_prd_legend="GOES-E Full disk - decalage correction de parallaxe"
+DEF_prd_app="imgINTERNE"
+DEF_prd_sources="Eir103R2kmNC+datationgtiff"
+DEF_prd_interface="prd_offset_goesr -P globeEoffsetP"
+#
+#DEF_prd_trs="interne"
+DEF_prd_trs="interne,safnwcg"
+#
+DEF_prd_rmk_interne="y"
+DEF_prd_sch_interne="always"
+#
+DEF_prd_sch_safnwcg="always"
+DEF_prd_cmp_safnwcg="null"
+DEF_prd_stx_safnwcg="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}.tar"
+#

@@ -1,0 +1,16 @@
+DEF_prd_id="globeEccnuitGT"
+DEF_prd_legend="Algorithme de nuit pour la CC de GOES-E. 2 km. Geotif. Pour imgTV et imgMEDIA."
+DEF_prd_app="imgPREVIcc"
+#
+DEF_prd_trs="interne,dataspaceCMS"
+#
+DEF_prd_sch_interne="always"
+#
+DEF_prd_sch_dataspaceCMS="always"
+DEF_prd_cmp_dataspaceCMS="null"
+DEF_prd_stx_dataspaceCMS="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}_${NN}.gtif"
+#
+DEF_prd_sch_controlesCMS="always"
+DEF_prd_cmp_controlesCMS="null"
+DEF_prd_stx_controlesCMS="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}_${NN}_${HOSTNAME}.gtif"
+#

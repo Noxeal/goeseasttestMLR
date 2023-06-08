@@ -1,0 +1,14 @@
+DEF_prd_id="spmEvsJPG"
+DEF_prd_legend="GOES-E St Pierre et Miquelon vis corrige TF1"
+DEF_prd_app="imgTV"
+#
+DEF_prd_trs="TRANSMETFAC"
+#
+DEF_prd_sch_TRANSMETFAC="sch_goes_Netcdf -H 0830:2330 -M 00,10,20,30,40,50"
+DEF_prd_cmp_TRANSMETFAC="null"
+DEF_prd_xstx_TRANSMETFAC="xstx_ett_msg -e tif.LT" # ajout gestion par xstx EVFP5n
+#
+DEF_prd_sch_controlesCMS="sch_goes_Netcdf -H 0830:2330"
+DEF_prd_cmp_controlesCMS="null"
+DEF_prd_stx_controlesCMS="${PRD}.goeseast.${YYYYMMDD}.${HHMN}.${NN}_${HOSTNAME}.jpg"
+#

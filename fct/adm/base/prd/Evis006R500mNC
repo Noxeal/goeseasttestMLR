@@ -1,0 +1,33 @@
+DEF_prd_id="Evis006R500mNC"
+DEF_prd_legend="GOES-R - 0.6 microns(canal 02)-resolution (native) 1km-format netcdf"
+DEF_prd_app="ncABIcorr"
+DEF_prd_sources="ABIL1bRadFC02R500m"
+DEF_prd_interface="prd_ncABIcorr -P Evis006R500mNC"
+#
+DEF_prd_trs="interne,SATMOSonline,safnwcg"
+#
+DEF_prd_sch_interne="always"
+DEF_prd_rmk_interne="n"
+#
+DEF_prd_sch_tmpTRS="always"
+DEF_prd_cmp_tmpTRS="null"
+DEF_prd_stx_tmpTRS="Emultic500mNC4_${SATIMG}_${YYYYMMDD}${HHMN}.nc"
+#DEF_prd_stx_tmpTRS="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMNSS}_${NNNNN}.nc"
+#
+DEF_prd_sch_controlesCMS="always"
+DEF_prd_cmp_controlesCMS="null"
+#Emultic500mNC4=Evis006R500NC
+DEF_prd_stx_controlesCMS="Emultic500mNC4_${SATIMG}_${YYYYMMDD}_${HHMN}_${HOSTNAME}.nc"
+#
+DEF_prd_sch_archivesCMS="always"
+DEF_prd_cmp_archivesCMS="null"
+DEF_prd_stx_archivesCMS="/goeseast/${SATIMG}/all/${YYYY}/${MM}/${DD}/Emultic500mNC4_${SATIMG}_${YYYYMMDD}${HHMN}.nc"
+#
+DEF_prd_sch_safnwcg="sch_goes_Netcdf -M 00,10,20,30,40,50"
+DEF_prd_cmp_safnwcg="null"
+DEF_prd_stx_safnwcg="Emultic500mNC4_${SATIMG}_${YYYYMMDD}${HHMN}.nc"
+#
+DEF_prd_sch_SATMOSonline="sch_goes_Netcdf -M 00,10,20,30,40,50"
+DEF_prd_cmp_SATMOSonline="null"
+DEF_prd_stx_SATMOSonline="Emultic500mNC4_${SATIMG}_${YYYYMMDD}${HHMN}.nc"
+#

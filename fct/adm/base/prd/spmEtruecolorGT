@@ -1,0 +1,21 @@
+DEF_prd_id="spmEtruecolorGT"
+DEF_prd_legend="Decoupage de globeEtruecolorGT."
+DEF_prd_app="VraieCouleur"
+#
+DEF_prd_trs="dataspaceCMS,TRANSMETprior"
+#
+DEF_prd_sch_rmk="n"
+DEF_prd_sch_controlesCMS="always"
+DEF_prd_cmp_controlesCMS="null"
+DEF_prd_stx_controlesCMS="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}_${NN}_${HOSTNAME}.tif"
+#
+DEF_prd_rmk_dataspaceCMS="n"
+DEF_prd_sch_dataspaceCMS="always"
+DEF_prd_cmp_dataspaceCMS="null"
+DEF_prd_stx_dataspaceCMS="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}_${NN}.tif"
+#
+DEF_prd_rmk_TRANSMETprior="y"
+DEF_prd_sch_TRANSMETprior="always"
+DEF_prd_cmp_TRANSMETprior="null"
+DEF_prd_stx_TRANSMETprior="EOFP52GOEE${DD}${HHMN}.${PRD}.goeseast.${YYYYMMDD}.${HHMN}.${NN}.tif.LT"
+

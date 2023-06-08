@@ -1,0 +1,25 @@
+#----------------------
+# Attributs specifiques
+#----------------------
+DEF_trs_id="W3online"
+DEF_trs_legend="Serveur OXYD - Alimentation www.meteo-spatiale.fr"
+DEF_trs_interface="A_trs_ftp -h fremext -d /monftp/public/send/G_W3online/A_${ARCHIPEL_ID}/data -u ftp -p goese -t 600 -m 2 -w 15"
+#DEF_trs_interface="A_trs_ftp -h fremext -d /monftp/public/send/G_W3online/A_goeseastbis/data -u ftp -p goese -t 600 -m 2 -w 15"
+#----------------------
+# Attributs de spool
+#----------------------
+DEF_trs_processor=-1
+DEF_trs_check=y
+DEF_trs_priority=data
+DEF_trs_tmode=reject
+DEF_trs_dmode=disable
+DEF_trs_dmode_INT=reject
+DEF_trs_dmode_OPE=enable
+DEF_trs_dmode_BIS=enable
+DEF_trs_dmode_TLS=reject
+DEF_trs_dorder=fifo
+DEF_trs_darcv=0
+DEF_trs_dartd=30
+DEF_trs_dnfiq=20
+DEF_trs_ntmp=10
+DEF_trs_atmp=30

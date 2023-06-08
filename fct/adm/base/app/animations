@@ -1,0 +1,28 @@
+#----------------------
+# Attributs specifiques 
+#----------------------
+DEF_app_id="animations"
+DEF_app_legend="Animer sur 12 heures antiguyaEir112GTP."
+DEF_app_start="null"
+DEF_app_stop="null"
+DEF_app_fbr=n
+DEF_app_sources="globeEir112GTP"
+DEF_app_interface="AnimationsAntillesIR"
+DEF_app_optstd=y
+#----------------------
+# Attributs de spool
+#----------------------
+DEF_app_processor=-1
+DEF_app_check=n
+DEF_app_priority=task
+DEF_app_tmode=enable
+DEF_app_torder=fifo
+DEF_app_tarcv=0
+DEF_app_tartd=30
+DEF_app_dmode=enable
+DEF_app_dorder=fifo
+DEF_app_darcv=0
+DEF_app_dartd=30
+DEF_app_dnfiq=20
+DEF_app_ntmp=10
+DEF_app_atmp=30

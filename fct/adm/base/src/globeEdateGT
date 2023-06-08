@@ -1,0 +1,4 @@
+DEF_src_id="globeEdateGT"
+DEF_src_legend="GOES-E date -127 a 127 minutes. 4km pour imgTIFFMF."
+DEF_src_info="A_stdname_idf_linux"
+DEF_src_filter="null"

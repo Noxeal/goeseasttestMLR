@@ -1,0 +1,17 @@
+DEF_prd_id="spmEccJPG"
+DEF_prd_legend="GOES-E St Pierre et Miquelon CC mediatique TF1"
+DEF_prd_app="imgTV"
+#
+DEF_prd_trs="interne,TRANSMETFAC"
+#
+DEF_prd_rmk_interne="y"
+DEF_prd_sch_interne="always"
+#
+DEF_prd_sch_TRANSMETFAC="sch_goes_Netcdf -M 00,10,20,30,40,50"
+DEF_prd_cmp_TRANSMETFAC="null"
+DEF_prd_xstx_TRANSMETFAC="xstx_ett_msg -e tif.LT" # ajout gestion par xstx EOFP5n
+#
+DEF_prd_sch_controlesCMS="always"
+DEF_prd_cmp_controlesCMS="null"
+DEF_prd_stx_controlesCMS="${PRD}_goeseast_${YYYYMMDD}_${HHMN}_${NN}_${HOSTNAME}.jpg"
+#

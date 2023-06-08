@@ -1,0 +1,24 @@
+#----------------------
+# Attributs specifiques
+#----------------------
+DEF_trs_id="archivesCMS"
+DEF_trs_legend="Archives CMS"
+DEF_trs_interface="A_ftp_put -h stockageCMS-ftp -u goeseast -p nrj\$\$ -t 600 -m 2 -w 15 -T OFF"
+#----------------------
+# Attributs de spool
+#----------------------
+DEF_trs_processor=-1
+DEF_trs_check=y
+DEF_trs_priority=data
+DEF_trs_tmode=reject
+DEF_trs_dmode=disable
+DEF_trs_dmode_INT=reject
+DEF_trs_dmode_OPE=enable
+DEF_trs_dmode_BIS=reject
+DEF_trs_dmode_TLS=reject
+DEF_trs_dorder=fifo
+DEF_trs_darcv=0
+DEF_trs_dartd=30
+DEF_trs_dnfiq=20
+DEF_trs_ntmp=10
+DEF_trs_atmp=30

@@ -1,0 +1,5 @@
+DEF_src_id="Esst1h"
+DEF_src_legend="produit horaire sst au format NetCDF"
+DEF_src_info="A_stdname_idf_linux"
+DEF_src_filter="null"
+DEF_src_relay="n"

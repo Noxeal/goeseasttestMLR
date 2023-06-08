@@ -1,0 +1,24 @@
+DEF_prd_id="CycloneEavi"
+DEF_prd_legend="Animation de l'infrarouge sur 24 heures."
+DEF_prd_app="animations"
+#
+DEF_prd_trs="tmpTRS,TRANSMETFAC"
+#
+DEF_prd_sch_rmk_controlesCMS="n"
+DEF_prd_sch_controlesCMS="always"
+DEF_prd_cmp_controlesCMS="null"
+DEF_prd_stx_controlesCMS="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}_${NN}_${HOSTNAME}.avi"
+#
+DEF_prd_rmk_dataspaceCMS="n"
+DEF_prd_sch_dataspaceCMS="always"
+DEF_prd_cmp_dataspaceCMS="null"
+DEF_prd_stx_dataspaceCMS="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}_${NN}.avi"
+#
+DEF_prd_sch_tmpTRS="always"
+DEF_prd_stx_tmpTRS="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}_${NN}.avi"
+#
+DEF_prd_sch_rmk_TRANSMETFAC="n"
+DEF_prd_sch_TRANSMETFAC="always"
+DEF_prd_cmp_TRANSMETFAC="null"
+DEF_prd_stx_TRANSMETFAC="EYCA61GOEE${DD}${HHMN}.${PRD}.goeseast.${YYYYMMDD}.${HHMN}.${NN}.avi.LT"
+#

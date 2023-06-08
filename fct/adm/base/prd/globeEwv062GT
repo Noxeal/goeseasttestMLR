@@ -1,0 +1,24 @@
+DEF_prd_id="globeEwv062GT"
+DEF_prd_legend="GOES-E globe wv062. Dynamique de 180 a 307.5. Geotiff."
+DEF_prd_app="imgPREVI"
+#
+DEF_prd_trs="TRANSMETprior,xsat,interne,dataspaceCMS,rrsat"
+#
+DEF_prd_sch_TRANSMETprior="sch_goes_Netcdf -M 00,10,20,30,40,50"
+DEF_prd_cmp_TRANSMETprior="null"
+DEF_prd_xstx_TRANSMETprior="xstx_ett_msg -e tif.LT" # ajout gestion par xstx EWXAnn
+#
+DEF_prd_sch_xsat="always"
+DEF_prd_sch_rrsat="always"
+#
+DEF_prd_sch_controlesCMS="always"
+DEF_prd_cmp_controlesCMS="null"
+DEF_prd_stx_controlesCMS="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}_${NN}_${HOSTNAME}.tif"
+#
+DEF_prd_sch_interne="always"
+#
+DEF_prd_rmk_dataspaceCMS="n"
+DEF_prd_sch_dataspaceCMS="always"
+DEF_prd_cmp_dataspaceCMS="null"
+DEF_prd_stx_dataspaceCMS="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}_${NN}.tif"
+#

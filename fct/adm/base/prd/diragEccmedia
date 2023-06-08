@@ -1,0 +1,20 @@
+DEF_prd_id="diragEccmedia"
+DEF_prd_legend="GOES-E  DIRAG CC mediatique - format JPEG. Algo d'imgTV."
+DEF_prd_app="imgTV"
+#
+DEF_prd_trs="TRANSMETFAC,dataspaceCMS"
+#
+DEF_prd_sch_TRANSMETFAC="sch_goes_Netcdf -H 1500,1800"
+DEF_prd_cmp_TRANSMETFAC="null"
+DEF_prd_xstx_TRANSMETFAC="xstx_ett_msg -e tif.LT" # ajout gestion par xstx EOCA4n
+#
+DEF_prd_rmk_controlesCMS="y"
+DEF_prd_sch_controlesCMS="always"
+DEF_prd_cmp_controlesCMS="null"
+DEF_prd_stx_controlesCMS="${PRD}_${YYYYMMDD}_${HHMN}_${NNNNN}_${HOSTNAME}.jpg"
+#
+#
+DEF_prd_rmk_dataspaceCMS="n"
+DEF_prd_sch_dataspaceCMS="always"
+DEF_prd_cmp_dataspaceCMS="null"
+DEF_prd_stx_dataspaceCMS="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}_${NN}.jpg"

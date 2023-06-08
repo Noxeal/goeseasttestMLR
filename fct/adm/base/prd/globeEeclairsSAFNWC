@@ -1,0 +1,15 @@
+DEF_prd_id="globeEeclairsSAFNWC"
+DEF_prd_legend="produit de detection d eclairs, au format texte convenant aux chaines du safnwc"
+DEF_prd_app="eclairs4safnwc"
+#
+DEF_prd_trs="safnwcgGLM"
+#
+DEF_prd_sch_controlesCMS="always"
+DEF_prd_rmk_controlesCMS="y"
+DEF_prd_stx_controlesCMS="S_NWC_LIGHTNING_WWLLN_global_${YYYY}-${MM}-${DD}T${HH}:${MN}:${SS}Z_005_${HOSTNAME}.txt"
+#
+DEF_prd_sch_safnwcgGLM="always"
+DEF_prd_cmp_safnwcgGLM="null"
+DEF_prd_rmk_safnwcgGLM="y"
+DEF_prd_stx_safnwcgGLM="S_NWC_LIGHTNING_WWLLN_global_${YYYY}-${MM}-${DD}T${HH}:${MN}:${SS}Z_005.txt"
+#

@@ -1,0 +1,6 @@
+DEF_src_id="CTh5"
+DEF_src_legend="Classification nuageuse (cloud type) au format hdf5, provenant de la cha??ne INM"
+# DEF_src_info="A_stdname_idf_linux"
+DEF_src_info="java safnwcCtCmaCtth5_idf"
+DEF_src_filter="null"
+DEF_src_relay="n"

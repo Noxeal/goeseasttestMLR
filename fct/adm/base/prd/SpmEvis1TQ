@@ -1,0 +1,24 @@
+DEF_prd_id="SpmEvis1TQ"
+DEF_prd_legend="GOES-E  Saint-Pierre et Miquelon Visible 1km corrige - format TIFF-MF"
+DEF_prd_app="imgTIFFMF"
+#
+DEF_prd_trs=""
+#
+DEF_prd_sch_TRANSMETprior="sch_goes_Netcdf -H 0900:2300 -M 00,10,20,30,40,50"
+DEF_prd_cmp_TRANSMETprior="null"
+DEF_prd_stx_TRANSMETprior="EVFP51GOEE${DD}${HHMN}.${PRD}.goeseast.${YYYYMMDD}.${HHMN}.${NN}.tif.LT"
+#
+DEF_prd_rmk_SOPRANOsec="n"
+DEF_prd_sch_SOPRANOsec="sch_goes_Netcdf -H 0900:2300 -M 00,10,20,30,40,50"
+DEF_prd_cmp_SOPRANOsec="null"
+DEF_prd_stx_SOPRANOsec="EVFP51GOEE${DD}${HHMN}.${PRD}.goeseast.${YYYYMMDD}.${HHMN}.${NN}.tif.LT"
+#
+DEF_prd_sch_controlesCMS="always"
+DEF_prd_cmp_controlesCMS="null"
+DEF_prd_stx_controlesCMS="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}_${HOSTNAME}.tif"
+#
+DEF_prd_rmk_testSYNERGIE="n"
+DEF_prd_sch_testSYNERGIE="always"
+DEF_prd_cmp_testSYNERGIE="null"
+DEF_prd_stx_testSYNERGIE="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}.tif.LT"
+#

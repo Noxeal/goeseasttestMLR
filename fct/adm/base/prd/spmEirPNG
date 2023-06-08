@@ -1,0 +1,16 @@
+DEF_prd_id="spmEirPNG"
+DEF_prd_legend="GOES-E St Pierre et Miquelon ir TF1 format PNG"
+DEF_prd_app="imgINTERNE"
+DEF_prd_sources="Eir103R2kmNC,diragEic+globeEirTP+ABIL1bRadFC15+testnoncliquable"
+DEF_prd_interface="prd_goesr_decoupageSPM1ere -P spmEirPNG"
+#
+DEF_prd_trs="TRANSMETFAC"
+#
+DEF_prd_sch_TRANSMETFAC="sch_goes_Netcdf -M 00,10,20,30,40,50"
+DEF_prd_cmp_TRANSMETFAC="null"
+DEF_prd_stx_TRANSMETFAC="EIFP51GOEE${DD}${HHMN}.${PRD}.goeseast.${YYYYMMDD}.${HHMN}.${NN}.png.LT"
+#
+DEF_prd_sch_controlesCMS="always"
+DEF_prd_cmp_controlesCMS="null"_
+DEF_prd_stx_controlesCMS="${PRD}.goeseast.${YYYYMMDD}.${HHMN}.${NN}_${HOSTNAME}.png"
+#

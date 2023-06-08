@@ -1,0 +1,4 @@
+DEF_src_id="globeEir112GTP"
+DEF_src_legend="GOES-E ir112 2km pour imgTIFFMF."
+DEF_src_info="A_stdname_idf_linux"
+DEF_src_filter="null"

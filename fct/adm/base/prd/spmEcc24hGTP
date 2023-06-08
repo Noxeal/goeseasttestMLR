@@ -1,0 +1,24 @@
+DEF_prd_id="spmEcc24hGTP"
+DEF_prd_legend="CC de type msg. Parallaxe. Geotif."
+DEF_prd_app="imgPREVIcc"
+#
+DEF_prd_trs="controlesCMS,TRANSMETFAC"
+#
+DEF_prd_sch_TRANSMETprior="sch_goes_Netcdf -M 00,10,20,30,40,50"
+DEF_prd_cmp_TRANSMETprior="null"
+DEF_prd_xstx_TRANSMETprior="xstx_ett_msg -e gtif.LT" # ajout gestion par xstx EOXAnn
+#
+DEF_prd_sch_controlesCMS="always"
+DEF_prd_cmp_controlesCMS="null"
+DEF_prd_stx_controlesCMS="EOFP53GOEE${DD}${HHMN}.${PRD}.goeseast.${YYYYMMDD}.${HHMN}.${NN}_${HOSTNAME}.tif"
+#
+DEF_prd_rmk_testSYNOPSISdev="n"
+DEF_prd_sch_testSYNOPSISdev="always"
+DEF_prd_cmp_testSYNOPSISdev="null"
+DEF_prd_stx_testSYNOPSISdev="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}.gtif.LT"
+#
+DEF_prd_sch_rmk_TRANSMETFAC="n"
+DEF_prd_sch_TRANSMETFAC="always"
+DEF_prd_cmp_TRANSMETFAC="null"
+DEF_prd_stx_TRANSMETFAC="EOFP53GOEE${DD}${HHMN}.${PRD}.goeseast.${YYYYMMDD}.${HHMN}.${NN}.tif.LT"
+#

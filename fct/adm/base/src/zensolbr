@@ -1,0 +1,4 @@
+DEF_src_id="zensolbr"
+DEF_src_legend="Angle solaire zenital en 2712 x 2712 x 4 km."
+DEF_src_info="A_stdname_idf_linux"
+DEF_src_filter="null"

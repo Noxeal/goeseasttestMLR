@@ -1,0 +1,25 @@
+#----------------------
+# Attributs specifiques
+#----------------------
+DEF_rcp_id="abiNC"
+DEF_rcp_legend="Reception de netcdfs issu de goes16-ABI (flux eumetcast ou GRB)"
+DEF_rcp_interface="rcp_abiNC.py"
+DEF_rcp_limit=0
+#----------------------
+# Attributs de spool
+#----------------------
+DEF_rcp_processor=-1
+DEF_rcp_check=n
+DEF_rcp_tmode=reject
+DEF_rcp_dmode=enable
+#DEF_rcp_dmode=reject
+DEF_rcp_dorder=fifo
+DEF_rcp_dorder_BIS=lifo
+DEF_rcp_dorder_DEV=lifo
+DEF_rcp_darcv=45
+DEF_rcp_dartd=30
+DEF_rcp_dnfiq=100
+DEF_rcp_ntmp=10
+DEF_rcp_atmp=30
+DEF_rcp_timeout=200
+

@@ -1,0 +1,15 @@
+DEF_prd_id="globeEtruecolor2GT"
+DEF_prd_legend="Composition en rgb avec les canaux 0,4 0,6 et 0,8 microns. NetcdfCASVariablebis.java pour la diffusion."
+DEF_prd_app="imgINTERNE"
+DEF_prd_sources="Evis004R2kmNC+vis006CASgtiff1km+Evis008R2kmNC,Evis004R1kmNC+vis006CASgtiff1km+Evis008R1kmNC"
+# Premier cas : eumetcast + midax.
+# Second cas : GRB (+ midax).
+# DEF_prd_sources="Evis004R1kmNC+vis006CASgtiff1km+Evis008R1kmNC"
+DEF_prd_interface="prd_goesr_tricouleur2 -P globeEtruecolor2GT"
+#
+DEF_prd_trs=""
+#
+DEF_prd_sch_rmk="n"
+DEF_prd_sch_controlesCMS="always"
+DEF_prd_cmp_controlesCMS="null"
+DEF_prd_stx_controlesCMS="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}_${NN}_${HOSTNAME}.gtif"

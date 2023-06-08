@@ -1,0 +1,19 @@
+DEF_prd_id="globeEhiwcMaskGT"
+DEF_prd_legend="masque High Ice Water Content au format geotiff"
+DEF_prd_app="imgIWC"
+DEF_prd_sources="globeEhiwcMaskNC"
+DEF_prd_interface="prd_IWCgeotiff -P globeEhiwcMaskGT"
+#
+DEF_prd_trs="TRANSMETFAC"
+#
+#DEF_prd_rmk_interne="n"
+#DEF_prd_sch_interne="always"
+#
+DEF_prd_rmk_TRANSMETFAC="n"
+DEF_prd_sch_TRANSMETFAC="always"
+DEF_prd_cmp_TRANSMETFAC="null"
+DEF_prd_stx_TRANSMETFAC="EPXA60GOEE${DD}${HHMN}.${PRD}.goeseast.${YYYYMMDD}.${HHMN}.${NN}.gtif.LT"
+#
+DEF_prd_sch_controlesCMS="always"
+DEF_prd_cmp_controlesCMS="null"
+DEF_prd_stx_controlesCMS="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}_${HOSTNAME}.gtif"

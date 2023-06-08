@@ -1,0 +1,21 @@
+#----------------------
+# Attributs specifiques
+#----------------------
+DEF_rcp_id="interne"
+DEF_rcp_legend="interne"
+DEF_rcp_interface="null"
+DEF_rcp_limit=0
+#----------------------
+# Attributs de spool
+#----------------------
+DEF_rcp_processor=-1
+DEF_rcp_check=n
+DEF_rcp_priority=data
+DEF_rcp_tmode=reject
+DEF_rcp_dmode=enable
+DEF_rcp_dorder=fifo
+DEF_rcp_darcv=0
+DEF_rcp_dartd=30
+DEF_rcp_dnfiq=20
+DEF_rcp_ntmp=10
+DEF_rcp_atmp=30

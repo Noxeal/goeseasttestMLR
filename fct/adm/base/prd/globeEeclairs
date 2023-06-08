@@ -1,0 +1,31 @@
+DEF_prd_id="globeEeclairs"
+DEF_prd_legend="Detection d'eclairs au format GeoJSON"
+DEF_prd_app="eclairs"
+DEF_prd_sources="GLML2"
+DEF_prd_interface="eclairs.py -c ${ARCHIPEL_ROOT}/fct/imagerie/prd/globeEeclairs.cfg -P globeEeclairs"
+#
+DEF_prd_trs="testSYNOPSIS,testSYNOPSIScms,TRANSMETFAC,interne"
+#
+DEF_prd_sch_interne="always"
+DEF_prd_rmk_interne="y"
+#
+DEF_prd_sch_controlesCMS="always"
+DEF_prd_rmk_controlesCMS="y"
+DEF_prd_cmp_controlesCMS="bzip2"
+#DEF_prd_stx_controlesCMS="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}_${NNNNN}_${HOSTNAME}.json.bz2"
+DEF_prd_stx_controlesCMS="T_EEXA60_C_LFRO_${YYYYMMDD}${HHMNSS}_${PRD}_goeseast.json.bz2"
+#
+DEF_prd_sch_testSYNOPSIS="always"
+DEF_prd_rmk_testSYNOPSIS="y"
+DEF_prd_cmp_testSYNOPSIS="bzip2"
+DEF_prd_stx_testSYNOPSIS="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}_${NNNNN}_${HOSTNAME}.json.bz2"
+#
+DEF_prd_sch_testSYNOPSIScms="always"
+DEF_prd_rmk_testSYNOPSIScms="y"
+DEF_prd_cmp_testSYNOPSIScms="bzip2"
+DEF_prd_stx_testSYNOPSIScms="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}_${NNNNN}_${HOSTNAME}.json.bz2"
+#
+DEF_prd_sch_TRANSMETFAC="always"
+DEF_prd_cmp_TRANSMETFAC="bzip2"
+DEF_prd_stx_TRANSMETFAC="T_EEXA60_C_LFRO_${YYYYMMDD}${HHMNSS}_${PRD}_goeseast.json.bz2"
+#

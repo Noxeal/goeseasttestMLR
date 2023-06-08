@@ -1,0 +1,20 @@
+#----------------------
+# Attributs specifiques
+#----------------------
+DEF_rcp_id="safnwc"
+DEF_rcp_legend="R??ception d'hdf5 en provenance du SAFNWC et fabriqu??s par une cha??ne INM."
+DEF_rcp_limit="0"
+DEF_rcp_interface="java rcp_safnwcCtCmaCtth5"
+#----------------------
+# Attributs de spool
+#----------------------
+DEF_rcp_processor=-1
+DEF_rcp_check=n
+DEF_rcp_tmode=reject
+DEF_rcp_dmode=enable
+DEF_rcp_dorder=fifo
+DEF_rcp_darcv=0
+DEF_rcp_dartd=30
+DEF_rcp_dnfiq=100
+DEF_rcp_ntmp=10
+DEF_rcp_atmp=30

@@ -1,0 +1,19 @@
+DEF_prd_id="globeEwv073TD"
+DEF_prd_legend="GOES-E globe WV calibre. wv073. 4km - TIFF-MF bi plans"
+DEF_prd_app="imgTIFFMF"
+#
+DEF_prd_trs=""
+#
+DEF_prd_sch_controlesCMS="always"
+DEF_prd_cmp_controlesCMS="null"
+DEF_prd_stx_controlesCMS="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}_${NN}_${HOSTNAME}.tif"
+#
+DEF_prd_sch_dataspaceCMS="always"
+DEF_prd_cmp_dataspaceCMS="null"
+DEF_prd_stx_dataspaceCMS="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}_${NN}.tif"
+#
+DEF_prd_rmk_testSYNERGIE="n"
+DEF_prd_sch_testSYNERGIE="always"
+DEF_prd_cmp_testSYNERGIE="null"
+DEF_prd_stx_testSYNERGIE="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}.tif"
+#

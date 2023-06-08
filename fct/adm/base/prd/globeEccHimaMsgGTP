@@ -1,0 +1,11 @@
+DEF_prd_id="globeEccHimaMsgGTP"
+DEF_prd_legend="CC de type msg le jour et de type hima la nuit. 2 km. Parallaxe. Geotif."
+DEF_prd_app="imgPREVIcc2"
+#
+DEF_prd_trs=""
+#
+DEF_prd_sch_controlesCMS="always"
+DEF_prd_cmp_controlesCMS="null"
+DEF_prd_stx_controlesCMS="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}_${NN}_${HOSTNAME}.gtif"
+#
+DEF_prd_sch_interne="always"

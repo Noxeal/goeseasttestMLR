@@ -1,0 +1,10 @@
+DEF_prd_id="AmeSudEir112GT"
+DEF_prd_legend="GOES-E IR. Dynamique universelle sur deux octets. Geotiff. Correction de parallaxe. 2km. Decoupage sur l'amerique du sud."
+DEF_prd_app="imgPREVI"
+#
+DEF_prd_trs=""
+#
+DEF_prd_sch_controlesCMS="always"
+DEF_prd_cmp_controlesCMS="null"
+DEF_prd_stx_controlesCMS="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}_${NN}_${HOSTNAME}.gtif"
+#

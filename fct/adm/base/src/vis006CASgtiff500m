@@ -1,0 +1,4 @@
+DEF_src_id="vis006CASgtiff500m"
+DEF_src_legend="Visible 006 corrige de l'angle solaire en 21696x21696x0,5 km et en geotiff."
+DEF_src_info="A_stdname_idf_linux"
+DEF_src_filter="null"

@@ -1,0 +1,22 @@
+DEF_prd_id="datationgtiff"
+DEF_prd_legend="Datation relative en seconde en 2712 x 2712 x 4 km et en geotiff sur le Netcdf entier."
+DEF_prd_app="imgDATATION"
+#
+DEF_prd_trs="interne,safnwcg,archivesCMS"
+#
+DEF_prd_rmk_interne="y"
+DEF_prd_sch_interne="always"
+#
+DEF_prd_sch_safnwcg="always"
+DEF_prd_cmp_safnwcg="null"
+DEF_prd_stx_safnwcg="${PRD}_${YYYYMMDD}${HHMN}.tif"
+#
+DEF_prd_sch_tmpTRS="always"
+DEF_prd_cmp_tmpTRS="null"
+DEF_prd_stx_tmpTRS="${PRD}_${YYYYMMDD}${HHMN}.tif"
+#
+DEF_prd_sch_archivesCMS="always"
+DEF_prd_cmp_archivesCMS="null"
+DEF_prd_stx_archivesCMS="/goeseast/${SATIMG}/all/${YYYY}/${MM}/${DD}/${PRD}_${YYYYMMDD}${HHMN}.tif"
+#
+

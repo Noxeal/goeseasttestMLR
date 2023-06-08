@@ -1,0 +1,25 @@
+DEF_prd_id="globeEprecip3GT"
+DEF_prd_legend="Globe de dBz moyens pour la chaine xsat, en pgm."
+DEF_prd_app="precip3"
+DEF_prd_sources=""
+DEF_prd_interface=""
+#
+DEF_prd_trs="xsat,controlesCMS"
+#
+DEF_prd_rmk_interne="n"
+DEF_prd_sch_interne="always"
+#
+DEF_prd_sch_xsat="always"
+#
+DEF_prd_sch_controlesCMS="always"
+DEF_prd_cmp_controlesCMS="null"
+DEF_prd_stx_controlesCMS="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}_${NNNNN}_${HOSTNAME}.pgm"
+#
+DEF_prd_sch_synergie="always"
+DEF_prd_cmp_synergie="null"
+DEF_prd_stx_synergie="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}_${NNNNN}.tif"
+#
+DEF_prd_sch_tmpTRS="always"
+DEF_prd_cmp_tmpTRS="null"
+DEF_prd_stx_tmpTRS="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMNSS}_${NNNNN}.nc"
+#

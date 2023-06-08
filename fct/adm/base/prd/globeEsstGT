@@ -1,0 +1,26 @@
+DEF_prd_id="globeEsstGT"
+DEF_prd_legend="Hourly Sea Surface Temperature en geotiff"
+DEF_prd_app="imgSST"
+DEF_prd_sources="Esst1h"
+#DEF_prd_sources="sstPRDnc"
+DEF_prd_interface="prd_sstGLOBEnc -P globeEsstGT"
+#
+DEF_prd_trs="TRANSMETFAC"
+#
+DEF_prd_sch_controlesCMS="always"
+DEF_prd_cmp_controlesCMS="null"
+DEF_prd_stx_controlesCMS="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}_${NNNNN}_${HOSTNAME}.gtif"
+#
+DEF_prd_rmk_TRANSMETFAC="y"
+DEF_prd_sch_TRANSMETFAC="sch_goes_Netcdf -M 00"
+DEF_prd_cmp_TRANSMETFAC="null"
+DEF_prd_stx_TRANSMETFAC="ESXA40OGOE${DD}${HHMN}.${PRD}.goeseast.${YYYYMMDD}.${HHMN}.${NN}.tif.LT"
+#
+#
+DEF_prd_sch_synergieCMS="always"
+DEF_prd_cmp_synergieCMS="null"
+DEF_prd_xstx_synergieCMS="xstx_ett_msg -e tif.LT" # ESEU8iOMMG
+#
+DEF_prd_sch_testSYNOPSIS="always"
+DEF_prd_cmp_testSYNOPSIS="null"
+DEF_prd_stx_testSYNOPSIS="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}_${NNNNN}_${HOSTNAME}.tif"

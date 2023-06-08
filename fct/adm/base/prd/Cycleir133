@@ -1,0 +1,15 @@
+DEF_prd_id="cyclelrit"
+DEF_prd_legend="GOES-R. Segments concatenes constituant un globe. Monocanal. Lrit."
+DEF_prd_app="ingestSegGoesr"
+# DEF_prd_sources="segmentlrit"
+# DEF_prd_interface="app_ingestSegGoesr"
+#
+DEF_prd_trs="interne"
+#
+DEF_prd_sch_interne="always"
+DEF_prd_rmk_interne="y"
+#
+DEF_prd_sch_controlesCMS="always"
+DEF_prd_cmp_controlesCMS="null"
+DEF_prd_stx_controlesCMS="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}_${NN}.lrit"
+#

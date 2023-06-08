@@ -1,0 +1,25 @@
+DEF_prd_id="antiguyaEir112GTP"
+DEF_prd_legend="GOES-E domaine DIRAG ir112 Dynamique universelle sur 2 octets  correction parallaxe  Geotiff."
+DEF_prd_app="imgMFI"
+DEF_prd_sources="globeEir112GTP"
+DEF_prd_interface="prd_goesE_DIRAG -P antiguyaEir112GTP"
+#
+DEF_prd_trs="TRANSMETprior,interne"
+#
+DEF_prd_sch_interne="always"
+#
+DEF_prd_rmk_TRANSMETprior="y"
+DEF_prd_sch_TRANSMETprior="always"
+DEF_prd_cmp_TRANSMETprior="null"
+DEF_prd_stx_TRANSMETprior="EICA61GOEE${DD}${HHMN}.${PRD}.goeseast.${YYYYMMDD}.${HHMN}.${NN}.gtif.LT"
+#
+DEF_prd_rmk_dataspaceCMS="n"
+DEF_prd_sch_dataspaceCMS="always"
+DEF_prd_cmp_dataspaceCMS="null"
+DEF_prd_stx_dataspaceCMS="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}_${NN}.tif"
+#
+DEF_prd_sch_controlesCMS="always"
+DEF_prd_cmp_controlesCMS="null"
+#DEF_prd_stx_controlesCMS="EIHA60GOEE${DD}${HHMN}.${PRD}.goeseast.${YYYYMMDD}.${HHMN}.${NN}.tif.LT"
+DEF_prd_stx_controlesCMS="${PRD}.goeseast.${YYYYMMDD}.${HHMN}.${NN}_${HOSTNAME}.tif"
+#

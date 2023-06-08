@@ -1,0 +1,26 @@
+DEF_prd_id="AntillesEvis1TQ"
+DEF_prd_legend="GOES-E Antilles VIS 1 km corrige TIFF-MF"
+DEF_prd_app="imgTIFFMF"
+#
+DEF_prd_trs="TRANSMETprior"
+#
+DEF_prd_rmk_TRANSMETprior="n"
+DEF_prd_sch_TRANSMETprior="sch_goes_Netcdf -H 0700:0300 -M 00,30"
+## Prise en compte de la source "g1hr1" (Atlantic hurricane) => DEF_prd_sch_TRANSMETprior="sch_goes -H 0700:0300"
+DEF_prd_cmp_TRANSMETprior="null"
+DEF_prd_stx_TRANSMETprior="EVCA47GOEE${DD}${HHMN}.${PRD}.goeseast.${YYYYMMDD}.${HHMN}.${NN}.tif.LT"
+#
+#
+DEF_prd_rmk_SOPRANOsec="n"
+DEF_prd_sch_SOPRANOsec="sch_goes_Netcdf -H 0700:0300 -M 00,30"
+DEF_prd_cmp_SOPRANOsec="null"
+DEF_prd_stx_SOPRANOsec="EVCA47GOEE${DD}${HHMN}.${PRD}.goeseast.${YYYYMMDD}.${HHMN}.${NN}.tif.LT"
+#
+DEF_prd_sch_controlesCMS="always"
+DEF_prd_cmp_controlesCMS="null"
+DEF_prd_stx_controlesCMS="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}_${HOSTNAME}.tif"
+#
+DEF_prd_sch_testSYNERGIE="always"
+DEF_prd_cmp_testSYNERGIE="null"
+DEF_prd_stx_testSYNERGIE="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}.tif.LT"
+#

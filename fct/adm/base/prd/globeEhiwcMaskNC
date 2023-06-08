@@ -1,0 +1,14 @@
+DEF_prd_id="globeEhiwcMaskNC"
+DEF_prd_legend="masque High Ice Water Content au format netcdf"
+DEF_prd_app="imgIWC"
+DEF_prd_sources="CTTh5+CMICh5"
+DEF_prd_interface="prd_IWCncfile -P globeEhiwcMaskNC"
+#
+DEF_prd_trs="interne"
+#
+DEF_prd_rmk_interne="n"
+DEF_prd_sch_interne="always"
+#
+DEF_prd_sch_controlesCMS="always"
+DEF_prd_cmp_controlesCMS="bzip2"
+DEF_prd_stx_controlesCMS="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}_${HOSTNAME}.nc.bz2"

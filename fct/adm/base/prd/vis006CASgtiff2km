@@ -1,0 +1,12 @@
+DEF_prd_id="vis006CASgtiff2km"
+DEF_prd_legend="Visible 006 corrige de l'angle solaire en resolution en 5424x5424x2km et en geotiff."
+DEF_prd_app="imgINTERNE"
+DEF_prd_sources="Evis006R2kmNC+datationgtiff"
+DEF_prd_interface="prd_goesr_visgtiff -P vis006CASgtiff2km"
+#
+DEF_prd_trs="interne,xsat"
+#
+DEF_prd_rmk_interne="y"
+DEF_prd_sch_interne="always"
+#
+DEF_prd_sch_xsat="always"

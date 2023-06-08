@@ -1,0 +1,19 @@
+DEF_prd_id="AntillesEtruecolorGT"
+DEF_prd_legend="Composition en rgb avec les canaux 0,4 0,6 et 0,8 microns. Pyspectral pour la diffusion. 500m de resolution."
+DEF_prd_app="VraieCouleur"
+# DEF_prd_sources="Evis004R1kmNC+Evis006R1kmNC+Evis008R1kmNC"
+# DEF_prd_sources="Evis004R1kmNC+Evis006R500mNC+Evis008R1kmNC"
+#DEF_prd_sources="Evis004R2kmNC+Evis006R1kmNC+Evis008R2kmNC"
+# DEF_prd_interface="prd_goesr_tricouleur -P AntillesEtruecolorGT"
+#
+DEF_prd_trs="dataspaceCMS"
+#
+DEF_prd_sch_rmk="n"
+DEF_prd_sch_controlesCMS="always"
+DEF_prd_cmp_controlesCMS="null"
+DEF_prd_stx_controlesCMS="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}_${NN}_${HOSTNAME}.gtif"
+#
+DEF_prd_rmk_dataspaceCMS="n"
+DEF_prd_sch_dataspaceCMS="always"
+DEF_prd_cmp_dataspaceCMS="null"
+DEF_prd_stx_dataspaceCMS="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}_${NN}.gtif"

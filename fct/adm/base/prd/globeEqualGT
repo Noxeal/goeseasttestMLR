@@ -1,0 +1,24 @@
+DEF_prd_id="globeEqualGT"
+DEF_prd_legend="GOES-E globe. Plan qualite de la correction de parallaxe. Geotiff."
+DEF_prd_app="imgPREVI"
+# DEF_prd_sources="NCgvar+datationgtiff+globeEoffsetP"
+# DEF_prd_interface="prd_goes_Netcdf -P globeEirTP"
+#
+DEF_prd_trs="TRANSMETprior,interne"
+#
+DEF_prd_sch_TRANSMETprior="sch_goes_Netcdf -M 00,10,20,30,40,50"
+DEF_prd_cmp_TRANSMETprior="null"
+DEF_prd_xstx_TRANSMETprior="xstx_ett_msg -e tif.LT" # envoi des donnees modulees EQXA
+#
+DEF_prd_rmk_controlesCMS="y"
+DEF_prd_sch_controlesCMS="always"
+DEF_prd_cmp_controlesCMS="null"
+DEF_prd_stx_controlesCMS="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}_${NN}_${HOSTNAME}.gtif"
+#
+DEF_prd_sch_interne="always"
+#
+DEF_prd_rmk_tmpTRS="y"
+DEF_prd_sch_tmpTRS="always"
+DEF_prd_cmp_tmpTRS="null"
+DEF_prd_xstx_tmpTRS="xstx_ett_msg -e gtif.LT" # essai envoi en xstx 
+#

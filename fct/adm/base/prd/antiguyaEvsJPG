@@ -1,0 +1,15 @@
+DEF_prd_id="antiguyaEvsJPG"
+DEF_prd_legend="GOES-E Antilles Guyane vis corrige TF1"
+DEF_prd_app="imgTV"
+#
+DEF_prd_trs="TRANSMETprior"
+#
+DEF_prd_rmk_TRANSMETprior="n"
+DEF_prd_sch_TRANSMETprior="sch_goes_Netcdf -H 0730:0000 -M 00,10,20,30,40,50"
+DEF_prd_cmp_TRANSMETprior="null"
+DEF_prd_xstx_TRANSMETprior="xstx_ett_msg -e tif.LT" # ajout gestion par xstx EVCA5n
+#
+DEF_prd_sch_controlesCMS="always"
+DEF_prd_cmp_controlesCMS="null"
+DEF_prd_stx_controlesCMS="${PRD}.goeseast.${YYYYMMDD}.${HHMN}.${NN}_${HOSTNAME}.jpg"
+#

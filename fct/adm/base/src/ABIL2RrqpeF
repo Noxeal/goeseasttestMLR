@@ -1,0 +1,5 @@
+DEF_src_id="ABIL2RrqpeF"
+DEF_src_legend="Netcdf GOES ABI L2 RRQPE Full Disk"
+DEF_src_info="ABIL2nc_idf.py"
+#DEF_src_filter="dispatch l2 GRB"
+DEF_src_filter="null"

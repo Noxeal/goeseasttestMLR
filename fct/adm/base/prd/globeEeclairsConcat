@@ -1,0 +1,15 @@
+DEF_prd_id="globeEeclairsConcat"
+DEF_prd_legend="produit de detection d eclairs sur une periode de 5 minutes."
+DEF_prd_app="eclairsConcat"
+#
+DEF_prd_trs="TRANSMETFAC"
+#
+DEF_prd_sch_controlesCMS="always"
+DEF_prd_rmk_controlesCMS="y"
+DEF_prd_cmp_controlesCMS="bzip2"
+DEF_prd_stx_controlesCMS="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}_${NNNNN}_${HOSTNAME}.json.bz2"
+#
+DEF_prd_sch_TRANSMETFAC="always"
+DEF_prd_cmp_TRANSMETFAC="bzip2"
+DEF_prd_stx_TRANSMETFAC="EEXA61LFRO${DD}${HHMN}.${PRD}.goeseast.${YYYYMMDD}.${HHMN}.${NN}.json.bz2.LT"
+#

@@ -1,0 +1,20 @@
+DEF_prd_id="globeErrqpeGT"
+DEF_prd_legend="GOES-E globe. produit L2 RRQPE. 2km. Geotiff."
+DEF_prd_app="imgRrqpeAerosols"
+DEF_prd_sources="ABIL2RrqpeF"
+DEF_prd_interface="prd_ABI_Rrqpe -P globeErrqpeGT"
+#
+#DEF_prd_trs="controlesCMS,testSYNOPSIScms"
+DEF_prd_trs="controlesCMS"
+#DEF_prd_trs="testSYNOPSIScms"
+#
+DEF_prd_sch_controlesCMS="always"
+DEF_prd_cmp_controlesCMS="null"
+DEF_prd_stx_controlesCMS="pub/archipel/${ARCHIPEL_ID}/${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}_${NN}_${HOSTNAME}.gtif"
+#
+DEF_prd_sch_testSYNOPSIScms="always"
+DEF_prd_cmp_testSYNOPSIScms="null"
+#DEF_prd_stx_testSYNOPSIScms="pub/archipel/${ARCHIPEL_ID}/${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}_${NN}_${HOSTNAME}.gtif"
+#
+
+

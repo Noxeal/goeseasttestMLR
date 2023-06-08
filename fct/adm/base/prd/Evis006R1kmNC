@@ -1,0 +1,21 @@
+DEF_prd_id="Evis006R1kmNC"
+DEF_prd_legend="GOES-R - 0.6 microns(canal 02)-resolution (non native) 1km-format netcdf"
+DEF_prd_app="ncABIcorr"
+#DEF_prd_sources="ABIL1bRadFC02R1km"
+DEF_prd_sources="ABIL1bRadFC02R500m"
+DEF_prd_interface="prd_ncABIcorr -P Evis006R1kmNC"
+#
+#DEF_prd_trs="interne"
+DEF_prd_trs="interne"
+#
+DEF_prd_sch_interne="always"
+DEF_prd_rmk_interne="n"
+#
+DEF_prd_sch_tmpTRS="always"
+DEF_prd_cmp_tmpTRS="null"
+DEF_prd_stx_tmpTRS="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMNSS}_${NNNNN}.nc"
+#
+DEF_prd_sch_controlesCMS="always"
+DEF_prd_cmp_controlesCMS="null"
+DEF_prd_stx_controlesCMS="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}_${NN}.nc"
+#

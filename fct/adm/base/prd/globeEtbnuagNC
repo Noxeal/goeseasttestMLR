@@ -1,0 +1,17 @@
+DEF_prd_id="globeEtbnuagNC"
+DEF_prd_legend="Temperatures de brillance et prduits nuageux du SAF NWC pour le modele ARPEGE"
+DEF_prd_app="modeles"
+#
+DEF_prd_trs="TRANSMETprior"
+#
+DEF_prd_sch_interne="always"
+#
+DEF_prd_rmk_TRANSMETprior="n"
+DEF_prd_sch_TRANSMETprior="sch_MSG -M 00,30"
+DEF_prd_cmp_TRANSMETprior="null"
+DEF_prd_stx_TRANSMETprior="TXXA40GOEE${DD}${HHMN}.${PRD}.goeseast.${YYYYMMDD}.${HHMN}.${NN}.nc.LT"
+#
+DEF_prd_sch_controlesCMS="always"
+DEF_prd_cmp_controlesCMS="null"
+DEF_prd_stx_controlesCMS="${PRD}_${SAT}_${YYYYMMDD}_${HHMN}_${HOSTNAME}.nc"
+#

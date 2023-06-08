@@ -1,0 +1,21 @@
+DEF_prd_id="qklgEir039"
+DEF_prd_legend="GOES-E  IR 3.9 (canal2) - quicklook"
+DEF_prd_app="quicklooks"
+#
+DEF_prd_trs="fileserverCMS,SATMOS"
+#
+DEF_prd_rmk_fileserverCMS="n"
+DEF_prd_sch_fileserverCMS="always"
+DEF_prd_cmp_fileserverCMS="null"
+DEF_prd_stx_fileserverCMS="/goeseast/${SATIMG}/quicklook/${YYYY}/${MM}/${DD}/gEir039_${HHMN}.jpg"
+DEF_prd_stx_fileserverCMS_TLS="gEir039_${YYYY}${MM}${DD}${HHMN}.jpg"
+#
+DEF_prd_sch_controlesCMS="always"
+DEF_prd_cmp_controlesCMS="null"
+DEF_prd_stx_controlesCMS="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}_${NN}_${HOSTNAME}.jpg"
+#
+DEF_prd_rmk_SATMOS="n"
+DEF_prd_sch_SATMOS="sch_goes_Netcdf -H 0000,0300,0600,0900,1200,1500,1800,2100"
+DEF_prd_cmp_SATMOS="null"
+DEF_prd_stx_SATMOS="${YYYY}-${MM}-${DD}_${SATIMG}_g2g_${HHMN}.jpg"
+#

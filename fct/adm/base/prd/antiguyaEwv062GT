@@ -1,0 +1,23 @@
+DEF_prd_id="antiguyaEwv062GT"
+DEF_prd_legend="GOES-E domaine restreint DIRAG  wv062. Dynamique de 180 a 307.5. Geotiff."
+DEF_prd_app="imgMFI"
+DEF_prd_sources="globeEwv062GT"
+DEF_prd_interface="prd_goesE_DIRAG -P antiguyaEwv062GT"
+#
+DEF_prd_trs="TRANSMETprior"
+#
+DEF_prd_rmk_TRANSMETprior="y"
+DEF_prd_sch_TRANSMETprior="always"
+DEF_prd_cmp_TRANSMETprior="null"
+DEF_prd_stx_TRANSMETprior="EWCA61GOEE${DD}${HHMN}.${PRD}.goeseast.${YYYYMMDD}.${HHMN}.${NN}.gtif.LT"
+#
+DEF_prd_rmk_dataspaceCMS="n"
+DEF_prd_sch_dataspaceCMS="always"
+DEF_prd_cmp_dataspaceCMS="null"
+DEF_prd_stx_dataspaceCMS="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}_${NN}.tif"
+#
+DEF_prd_sch_controlesCMS="always"
+DEF_prd_cmp_controlesCMS="null"
+#DEF_prd_stx_controlesCMS="EWHA60GOEE${DD}${HHMN}.${PRD}.goeseast.${YYYYMMDD}.${HHMN}.${NN}.tif.LT"
+DEF_prd_stx_controlesCMS="${PRD}.goeseast.${YYYYMMDD}.${HHMN}.${NN}_${HOSTNAME}.tif"
+#

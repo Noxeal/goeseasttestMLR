@@ -1,0 +1,25 @@
+DEF_prd_id="vis006CASgtiff500m"
+DEF_prd_legend="Visible 006 corrige de l'angle solaire en resolution 21696x21696x0,5 km, en geotiff."
+DEF_prd_app="imgINTERNE"
+DEF_prd_sources="Evis006R500mNC+datationgtiff"
+DEF_prd_interface="prd_goesr_visgtiff -P vis006CASgtiff500m"
+#
+DEF_prd_trs="interne"
+#
+DEF_prd_rmk_interne="n"
+DEF_prd_sch_interne="always"
+#
+DEF_prd_sch_xsat="always"
+#
+DEF_prd_sch_controlesCMS="always"
+DEF_prd_cmp_controlesCMS="null"
+DEF_prd_stx_controlesCMS="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}_${NNNNN}_${HOSTNAME}.gtif"
+#
+DEF_prd_sch_synergie="always"
+DEF_prd_cmp_synergie="null"
+DEF_prd_stx_synergie="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}_${NNNNN}.tif"
+#
+DEF_prd_sch_tmpTRS="always"
+DEF_prd_cmp_tmpTRS="null"
+DEF_prd_stx_tmpTRS="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMNSS}_${NNNNN}.nc"
+#

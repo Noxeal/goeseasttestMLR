@@ -1,0 +1,19 @@
+DEF_prd_id="globeEccmediaGT"
+DEF_prd_legend="GOES-E  globe CC. Mediatique de jour avec terme neige et officielle de nuit. Resolution 1km. Geotiff."
+DEF_prd_app="imgMEDIA"
+#
+DEF_prd_trs="dataspaceCMS,xsat"
+#
+DEF_prd_rmk_interne="n"
+DEF_prd_sch_interne="always"
+#
+DEF_prd_sch_xsat="always"
+#
+DEF_prd_sch_dataspaceCMS="always"
+DEF_prd_cmp_dataspaceCMS="null"
+DEF_prd_stx_dataspaceCMS="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}_${NN}_${HOSTNAME}.tif"
+#
+DEF_prd_sch_controlesCMS="always"
+DEF_prd_cmp_controlesCMS="null"
+DEF_prd_stx_controlesCMS="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}_${NN}_${HOSTNAME}.tif"
+#

@@ -1,0 +1,20 @@
+DEF_prd_id="Eir133R2kmNC"
+DEF_prd_legend="GOES-R - 13.3 microns(canal 16)-resolution 2km-format netcdf (l'appli Xrit2Netcdf est susceptible de fabriquer ce produit)"
+DEF_prd_app="ncABIcorr"
+DEF_prd_sources="ABIL1bRadFC16"
+DEF_prd_interface="prd_ncABIcorr -P Eir133R2kmNC"
+#
+DEF_prd_trs="interne"
+#DEF_prd_trs="interne,tmpTRS"
+#
+DEF_prd_sch_interne="always"
+DEF_prd_rmk_interne="n"
+#
+DEF_prd_sch_tmpTRS="always"
+DEF_prd_cmp_tmpTRS="null"
+DEF_prd_stx_tmpTRS="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMNSS}_${NNNNN}.nc"
+#
+DEF_prd_sch_controlesCMS="always"
+DEF_prd_cmp_controlesCMS="null"
+DEF_prd_stx_controlesCMS="${PRD}_${SATIMG}_${YYYYMMDD}_${HHMN}_${NN}.nc"
+#
